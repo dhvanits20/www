@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Literary Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        border:box-sizing;
+    }
+    header{
+        background-color: black;
+        color:navajowhite;
+        padding:20px;
+        font-family: sans-serif;
+        font-size:25px;
+        background-image:;
+
+    }
+    .office{
+        font-family: sans-serif;
+    }
+    .heading{
+        font-family: sans-serif;
+
+    }
+    #contactform{
+        border:solid 15px;
+    }
+    body{
+        background-color:lightcyan;
+        font-size:18px;
+    }
+    .xyz{
+        font-family: sans-serif;
+        font-size: 20px;
+
+    }
+    .link{
+            color: white;
+        }
+        
+        
+</style>
+<body><center>
+    <header><img src="E:\DHVANIT WORK\wdt\contact1.png" align="left" height="110px" width="200px">
+        <img src="E:\DHVANIT WORK\wdt\contact2.jpg" align="right" height="110px" width="200px">
+        <h1><b>CONTACT US</b></h1><br>
+        <center><a href="html1.html" class="link">HOME</a></center>
+        
+    </header></center><br>
+    <main class="content">
+        
+        <h2 classs="heading"><u>Office Address:</u></h2>
+
+<div ><h3 class="office"><i>
+    
+
+<b>Sahajanan Avenue, AEC Cross Roads</b><br>
+<b>Naranpura, Ahmedabad</b><br>
+
+
+<b>Landline: (033) 2595 1189</b><br>
+<b>Cell: + 91 99983 22429</b><br><br>
+<b>Reach out us at:</b>
+<b>shahdhvanit172006@gmail.com</b>
+</i></h3>
+
+
+<fieldset border="10px">
+        <form id="contactForm"><b>
+            <label class="xyz" for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label class="xyz" for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label class="xyz" for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </b></form>
+    </fieldset>
+    <br>
+
+    </main>
+        <script>
+        function addEntry() {
+    const title = document.getElementById('entry-title').value;
+    const content = document.getElementById('entry-content').value;
+
+    if (title && content) {
+        const entrySection = document.getElementById('entries');
+        const newEntry = document.createElement('article');
+        newEntry.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+        entrySection.appendChild(newEntry);
+
+        // Clear the form
+        document.getElementById('entry-title').value = '';
+        document.getElementById('entry-content').value = '';
+    } else {
+        alert('Please fill out both the title and content fields.');
+    }
+}
+
+    </script>
+    
+</body>
+
+</html>
